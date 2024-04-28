@@ -1,6 +1,12 @@
+<script>
+    import HeaderItem from "./HeaderItem.svelte";
+
+</script>
 <header>
     <div class="left">
-        <slot name="left"/>
+        <HeaderItem href="/">Home</HeaderItem>
+        <HeaderItem href="/about">About</HeaderItem>
+        <HeaderItem href="/article">Article</HeaderItem>
     </div>
     <div class="right">
         <slot name="right"/>
